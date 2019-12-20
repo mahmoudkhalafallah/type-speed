@@ -42,9 +42,7 @@
                 "html": true
             }
         ],
-        "autofix/no-debugger": "error",
-        "autofix/no-unused-labels": "error",
-        "autofix/no-unused-vars": "error"
+        "autofix/no-debugger": "error"
     },
     "settings": {
         "react": {
