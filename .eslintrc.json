@@ -35,6 +35,13 @@
         "react/prop-types": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
+        "react/self-closing-comp": [
+            "error",
+            {
+                "component": true,
+                "html": true
+            }
+        ],
         "autofix/no-debugger": "error",
         "autofix/no-unused-labels": "error",
         "autofix/no-unused-vars": "error"
