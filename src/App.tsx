@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-import Game from './components/Game'
+import Game from './views/Game'
 import { Router } from '@reach/router'
-import History from './components/History'
+import History from './views/History'
 
 const App: React.FC = () => {
 
