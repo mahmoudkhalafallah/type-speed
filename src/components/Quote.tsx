@@ -32,8 +32,8 @@ interface Props {
 const Quote: React.FC<Props> = ({ data, index, length, isValid }) => <StyledQuote>
     {data.length && data.slice(0, index).join(" ")}
     {(index > 0) && " "}
-    {isValid ? <GreenText>{data[index].slice(0, length)}</GreenText> : <RedText>{data[index].slice(0, length)}</RedText>}
-    <ActiveText>{data[index].slice(length)}</ActiveText>
+    {data[index] && (isValid ? <GreenText>{data[index].slice(0, length)}</GreenText> : <RedText>{data[index].slice(0, length)}</RedText>)}
+    {data[index] && <ActiveText>{data[index].slice(length)}</ActiveText>}
     {" "}
     {data.length && data.slice(index + 1).join(" ")}
 </StyledQuote>
