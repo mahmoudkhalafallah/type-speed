@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { HISTORY_URL } from '../constants'
 
 const StyledInfoList = styled.ul`
 align-self: flex-end;
@@ -61,7 +60,7 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) =>
         {gameOver && <StyledInfoItem>
             Completion Percentage: <span>{cp}</span>%
 		</StyledInfoItem>}
-        {(historyId.length > 0) && <StyledInfoItem>Find your record <a href={`${HISTORY_URL}/${historyId}`} target='_blank' rel="noopener noreferrer" >here</a></StyledInfoItem>}
+        {(historyId.length > 0) && <StyledInfoItem>Find your record <a href={`${window.location.host}/history/${historyId}`} target='_blank' rel="noopener noreferrer" >here</a></StyledInfoItem>}
     </StyledInfoList>
 }
 
