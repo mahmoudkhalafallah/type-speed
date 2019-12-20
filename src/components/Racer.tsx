@@ -71,7 +71,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
             setSecondsElapsed(s => s + 1)
             const typedChars = quoteText.slice(0, wordIndex).join(' ').length
             if (secondsElapsed > 0) {
-                setWpm((typedChars / 5) / (secondsElapsed / 60))
+                setWpm(parseInt(((typedChars / 5) / (secondsElapsed / 60)).toFixed()))
             }
         }, 1000)
         return () => {
