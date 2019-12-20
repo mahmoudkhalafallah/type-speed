@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import InfoList from '../components/InfoList'
 import Racer from '../components/Racer'
 import { HISTORY_URL } from '../constants'
-// eslint-disable-next-line no-unused-vars
-import { RouteComponentProps } from '@reach/router'
+import { RouteComponentProps } from "@reach/router" // eslint-disable-line no-unused-vars
 
 const GameOver = styled.h2`
 transition: 0.2s ease;

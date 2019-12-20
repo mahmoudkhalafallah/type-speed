@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { HISTORY_URL } from '../constants'
-// eslint-disable-next-line no-unused-vars
-import { RouteComponentProps } from '@reach/router'
+import { RouteComponentProps } from "@reach/router" // eslint-disable-line no-unused-vars
 import styled from 'styled-components'
 
 declare interface Props extends RouteComponentProps {
