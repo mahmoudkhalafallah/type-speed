@@ -11,13 +11,30 @@ transition: 0.2s ease;
 color: #c90000;
 font-size: 48px;
 z-index: 5;
-display: flex;
-align-items: center;
-justify-content: center;
+text-align: center;
+`
+
+const PlayAgainBtn = styled.button`
+display: block;
+margin: 0 auto;
+background: #000;
+border: 0;
+padding: 15px 20px;
+color: #fcc944;
+font-size: 20px;
+cursor: pointer;
+font-weight: bold;
+transition: color, transform 0.3s ease;
+&:hover {
+    background: #1c9d1c;
+    color: #fff;
+    transform: scale(1.1);
+}
 `
 
 const Game: React.FC<RouteComponentProps> = () => {
     const [gameOver, setGameOver] = useState(false)
+    const [restartGame, setRestartGame] = useState(false)
     const [wpm, setWpm] = useState(0)
     const [completionPercent, setCompletionPercent] = useState(0)
     const [gameRecordsHistoryId, setGameRecordsHistoryId] = useState('')
@@ -45,11 +62,27 @@ const Game: React.FC<RouteComponentProps> = () => {
         }
     }, [gameOver, completionPercent, wpm])
 
+
+    useEffect(() => {
+        if (restartGame) {
+            setGameOver(false)
+            setRestartGame(false)
+        }
+    }, [restartGame])
+
     return (
         <div className="Game">
-            {gameOver && <GameOver>Game Over</GameOver>}
-            <InfoList gameOver={gameOver} endGame={setGameOver} wpm={wpm} cp={completionPercent} historyId={gameRecordsHistoryId} />
-            <Racer gameOver={gameOver} endGame={setGameOver} setWpm={setWpm} setCp={setCompletionPercent} />
+            {gameOver && <>
+                <GameOver>Game Over</GameOver>
+                <PlayAgainBtn onClick={() => { setRestartGame(true) }}>Play Again!</PlayAgainBtn>
+            </>}
+            {
+                !restartGame &&
+                <>
+                    <InfoList gameOver={gameOver} endGame={setGameOver} wpm={wpm} cp={completionPercent} historyId={gameRecordsHistoryId} />
+                    <Racer gameOver={gameOver} endGame={setGameOver} setWpm={setWpm} setCp={setCompletionPercent} />
+                </>
+            }
         </div>
     )
 }
