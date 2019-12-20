@@ -22,7 +22,7 @@ interface Props {
 }
 
 const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) => {
-    const [time, setTime] = useState({ minutes: 0, seconds: 5 })
+    const [time, setTime] = useState({ minutes: 3, seconds: 0 })
 
     const stopGame = useCallback((timerHandle: NodeJS.Timeout) => {
         clearInterval(timerHandle)
