@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import styled from 'styled-components'
 import Quote from './Quote'
-
+import { QUOTE_URL } from '../constants'
 
 const UserEntry = styled.input`
 width: 100%;
@@ -54,7 +54,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
     }
 
     useEffect(() => {
-        fetch('https://baconipsum.com/api/?type=meat-and-filler&paras=1&format=text').then(res => res.text()).then((data: string) => {
+        fetch(QUOTE_URL).then(res => res.text()).then((data: string) => {
             data = data.replace(/\s{2,}/g, ' ') // remove extra spaces
             setQuoteText(data.split(" "))
         })

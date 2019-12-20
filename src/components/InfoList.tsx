@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled from 'styled-components'
+import { HISTORY_URL } from '../constants'
 
 const StyledInfoList = styled.ul`
 align-self: flex-end;
@@ -17,9 +18,10 @@ interface Props {
     gameOver: boolean;
     wpm: number;
     cp: number;
+    historyId: string
 }
 
-const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp }) => {
+const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) => {
     const [time, setTime] = useState({ minutes: 0, seconds: 5 })
 
     const stopGame = useCallback((timerHandle: NodeJS.Timeout) => {
@@ -59,6 +61,7 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp }) => {
         {gameOver && <StyledInfoItem>
             Completion Percentage: <span>{cp}</span>%
 		</StyledInfoItem>}
+        {(historyId.length > 0) && <StyledInfoItem>Find your record <a href={`${HISTORY_URL}/${historyId}`} target='_blank' rel="noopener noreferrer" >here</a></StyledInfoItem>}
     </StyledInfoList>
 }
 
