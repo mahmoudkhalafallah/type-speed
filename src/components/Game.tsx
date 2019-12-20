@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import InfoList from '../components/InfoList'
 import Racer from '../components/Racer'
 import { HISTORY_URL } from '../constants'
+// eslint-disable-next-line no-unused-vars
+import { RouteComponentProps } from '@reach/router'
 
 const GameOver = styled.h2`
 transition: 0.2s ease;
@@ -14,7 +16,7 @@ align-items: center;
 justify-content: center;
 `
 
-const Game: React.FC = () => {
+const Game: React.FC<RouteComponentProps> = () => {
     const [gameOver, setGameOver] = useState(false)
     const [wpm, setWpm] = useState(0)
     const [completionPercent, setCompletionPercent] = useState(0)
@@ -36,6 +38,10 @@ const Game: React.FC = () => {
                 const splittedText = data.uri.split('/')
                 setGameRecordsHistoryId(splittedText[splittedText.length - 1])
             })
+                .catch((err) => {
+                    console.log(err)
+
+                })
         }
     }, [gameOver, completionPercent, wpm])
 
