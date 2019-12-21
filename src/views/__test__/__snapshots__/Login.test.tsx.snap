@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login rendered correctly 1`] = `
+<section
+  className="sc-bdVaJa iQucfX"
+>
+  <form
+    className="sc-bwzfXH tBrJg"
+    onSubmit={[Function]}
+  >
+    <div
+      className="sc-htpNat gvTTRX"
+    >
+      <input
+        name="username"
+        placeholder="Username"
+      />
+      <div
+        className="err-msg"
+      />
+    </div>
+    <div
+      className="sc-htpNat gvTTRX"
+    >
+      <input
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <div
+        className="err-msg"
+      />
+    </div>
+    <div
+      className="err-msg"
+    />
+    <button
+      className="sc-bxivhb jphvjM"
+    >
+      Login
+    </button>
+  </form>
+  <div
+    className="sc-EHOje BSARn"
+  >
+    OR
+  </div>
+  <a
+    className="sc-ifAKCX bXUSNC"
+    href="/game"
+    onClick={[Function]}
+  >
+    Play Now
+  </a>
+</section>
+`;
