@@ -2,6 +2,7 @@
   "name": "type-speed-racer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mahmoudkhalafallah.github.io/type-speed",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "normalize.css": "^8.0.1",
@@ -15,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "jest": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +57,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "jest-fetch-mock": "^3.0.0",
     "jest-transform-css": "^2.0.0",
