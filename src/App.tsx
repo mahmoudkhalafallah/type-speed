@@ -15,7 +15,7 @@ const GameName = styled.h1`
 const App: React.FC = () => {
   return (
     <div className='App' >
-      <GameName>Type Speed</GameName>
+      <GameName>Typing Speed</GameName>
       <Router>
         <Game path="game" />
         <History path="history/:historyId" />
