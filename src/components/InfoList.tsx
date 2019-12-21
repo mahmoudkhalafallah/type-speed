@@ -12,7 +12,7 @@ font-family: "capture_it";
 const StyledInfoItem = styled.li`
 margin-bottom: 5px;
 span {
-    min-width: 60px;
+    min-width: 70px;
     display: inline-block;
 }
 a {
