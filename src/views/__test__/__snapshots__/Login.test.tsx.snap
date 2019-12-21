@@ -31,9 +31,6 @@ exports[`Login rendered correctly 1`] = `
         className="err-msg"
       />
     </div>
-    <div
-      className="err-msg"
-    />
     <button
       className="sc-bxivhb jphvjM"
     >
