@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote is invalid 1`] = `
+<div
+  className="sc-bdVaJa gnKtJD"
+>
+  
+  <span
+    className="sc-htpNat joxNFM"
+  >
+    P
+  </span>
+  <span
+    className="sc-bxivhb GkQco"
+  >
+    ork
+  </span>
+   
+  rump minim, laborum spare ribs pancetta lorem ut meatloaf ullamco swine sint voluptate pariatur. Ullamco mollit consequat est. Esse brisket spare ribs ipsum eiusmod t-bone mollit veniam. Exercitation short loin filet mignon, tenderloin tail anim kevin ribeye minim beef velit esse salami. Rump et do landjaeger.
+</div>
+`;
+
+exports[`Quote is valid 1`] = `
+<div
+  className="sc-bdVaJa gnKtJD"
+>
+  
+  <span
+    className="sc-bwzfXH kRBeZh"
+  >
+    P
+  </span>
+  <span
+    className="sc-bxivhb GkQco"
+  >
+    ork
+  </span>
+   
+  rump minim, laborum spare ribs pancetta lorem ut meatloaf ullamco swine sint voluptate pariatur. Ullamco mollit consequat est. Esse brisket spare ribs ipsum eiusmod t-bone mollit veniam. Exercitation short loin filet mignon, tenderloin tail anim kevin ribeye minim beef velit esse salami. Rump et do landjaeger.
+</div>
+`;
+
+exports[`Quote rendered correctly 1`] = `
+<div
+  className="sc-bdVaJa gnKtJD"
+>
+  
+  <span
+    className="sc-htpNat joxNFM"
+  >
+    
+  </span>
+  <span
+    className="sc-bxivhb GkQco"
+  >
+    Pork
+  </span>
+   
+  rump minim, laborum spare ribs pancetta lorem ut meatloaf ullamco swine sint voluptate pariatur. Ullamco mollit consequat est. Esse brisket spare ribs ipsum eiusmod t-bone mollit veniam. Exercitation short loin filet mignon, tenderloin tail anim kevin ribeye minim beef velit esse salami. Rump et do landjaeger.
+</div>
+`;
