@@ -135,11 +135,12 @@ const Login: React.FC<Props> = () => {
                     <input name="password" ref={register({ required: true })} placeholder='Password' type='password' />
                     <div className='err-msg'>{(errors.password?.type === 'required') && 'Password is required'}</div>
                 </FormGroup>
-                <div className='err-msg'>{
+                {
                     (errors.username?.type === 'invalidCredentials') &&
                     (errors.password?.type === 'invalidCredentials') &&
-                    'Invalid username or password'}
-                </div>
+                    <div className='err-msg'>Invalid username or password</div>
+                }
+
                 <SubmitBtn>Login</SubmitBtn>
             </LoginForm>
             <Separator>
