@@ -6,11 +6,30 @@ const StyledInfoList = styled.ul`
 align-self: flex-end;
 text-align: end;
 margin: 25px 0;
-font-weight: bold;
 list-style: none;
+font-family: "capture_it";
 `
 const StyledInfoItem = styled.li`
 margin-bottom: 5px;
+span {
+    min-width: 60px;
+    display: inline-block;
+}
+a {
+    color: #3d3d3d;
+}
+`
+
+const WpmIndicator = styled.span`
+    color: ${({ wpm }: { wpm: number }) => {
+        if (wpm > 35) {
+            return 'green'
+        } else if (wpm <= 35 && wpm > 23) {
+            return '#de5615'
+        } else {
+            return 'red'
+        }
+    }};
 `
 
 interface Props {
@@ -54,13 +73,20 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) =>
     }, [gameOver, stopGame, time.minutes, time.seconds])
 
     return <StyledInfoList>
-        <StyledInfoItem>Time: {time.minutes}:{time.seconds > 9 ? time.seconds : `0${time.seconds}`}</StyledInfoItem>
         <StyledInfoItem>
-            <span>{wpm}</span> WPM
-		</StyledInfoItem>
+            Time:
+            <span>
+                {time.minutes}:{time.seconds > 9 ? time.seconds : `0${time.seconds}`}
+            </span>
+        </StyledInfoItem>
+        <StyledInfoItem>
+            Words Per Minute:
+            <WpmIndicator wpm={wpm}>{wpm} WPM</WpmIndicator>
+        </StyledInfoItem>
         {gameOver && <StyledInfoItem>
-            Completion Percentage: <span>{cp}</span>%
-		</StyledInfoItem>}
+            Completion Percentage:
+            <span>{cp}%</span>
+        </StyledInfoItem>}
         {(historyId.length > 0) && <StyledInfoItem>Find your record <Link to={`/history/${historyId}`}>here</Link></StyledInfoItem>}
     </StyledInfoList>
 }

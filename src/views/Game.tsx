@@ -8,9 +8,11 @@ import { RouteComponentProps } from "@reach/router" // eslint-disable-line no-un
 const GameOver = styled.h2`
 transition: 0.2s ease;
 color: #c90000;
-font-size: 48px;
+font-size: 40px;
 z-index: 5;
 text-align: center;
+font-weight: 100;
+font-family: "capture_it";
 `
 
 const PlayAgainBtn = styled.button`
@@ -22,8 +24,8 @@ padding: 15px 20px;
 color: #fcc944;
 font-size: 20px;
 cursor: pointer;
-font-weight: bold;
-transition: color, transform 0.3s ease;
+transition: 0.3s ease;
+font-family: "capture_it";
 &:hover {
     background: #1c9d1c;
     color: #fff;
@@ -58,7 +60,6 @@ const Game: React.FC<RouteComponentProps> = ({ location }) => {
     const [wpm, setWpm] = useState(0)
     const [completionPercent, setCompletionPercent] = useState(0)
     const [gameRecordsHistoryId, setGameRecordsHistoryId] = useState('')
-    console.log(location)
     useEffect(() => {
         if (gameOver && completionPercent > 0) {
             fetch(HISTORY_URL,
@@ -92,7 +93,7 @@ const Game: React.FC<RouteComponentProps> = ({ location }) => {
         <div className="Game">
             {gameOver && <>
                 <GameOver>Game Over</GameOver>
-                <PlayAgainBtn onClick={() => { setRestartGame(true) }}>Play Again!</PlayAgainBtn>
+                <PlayAgainBtn onClick={() => { setRestartGame(true) }}>Play Again !</PlayAgainBtn>
             </>}
             {
                 !restartGame &&

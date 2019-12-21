@@ -37,6 +37,7 @@ border: 0;
 cursor: pointer;
 transition: 0.3s ease-in-out;
 text-align: center;
+font-family: "capture_it";
 `
 
 
@@ -61,6 +62,7 @@ const Separator = styled.div`
 text-align: center;
 margin: 15px 0;
 color: #818181;
+font-family: "capture_it";
 `
 
 const users = [
@@ -120,7 +122,6 @@ const Login: React.FC<Props> = () => {
             setError('username', 'invalidCredentials')
             setError('password', 'invalidCredentials')
         }
-        console.log(errors)
     }
 
     return (
