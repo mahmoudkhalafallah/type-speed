@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game rendered correctly 1`] = `
+<div
+  className="Game"
+>
+  <ul
+    className="sc-bdVaJa cSScn"
+  >
+    <li
+      className="sc-bwzfXH fwsDhg"
+    >
+      Time:
+      <span>
+        3
+        :
+        00
+      </span>
+    </li>
+    <li
+      className="sc-bwzfXH fwsDhg"
+    >
+      Words Per Minute:
+      <span
+        className="sc-htpNat grLPkg"
+      >
+        0
+         WPM
+      </span>
+    </li>
+  </ul>
+  <section
+    className="sc-dnqmqq hoMqEr"
+  />
+</div>
+`;
