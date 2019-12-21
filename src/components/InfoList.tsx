@@ -61,7 +61,7 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) =>
         {gameOver && <StyledInfoItem>
             Completion Percentage: <span>{cp}</span>%
 		</StyledInfoItem>}
-        {(historyId.length > 0) && <StyledInfoItem>Find your record <Link to={`/history/${historyId}`} target='_blank' rel="noopener noreferrer" >here</Link></StyledInfoItem>}
+        {(historyId.length > 0) && <StyledInfoItem>Find your record <Link to={`/history/${historyId}`}>here</Link></StyledInfoItem>}
     </StyledInfoList>
 }
 
