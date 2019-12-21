@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Racer rendered correctly 1`] = `
+<section
+  className="sc-bZQynM dCMySu"
+/>
+`;
+
+exports[`Racer rendered correctly on game over 1`] = `
+<section
+  className="sc-bZQynM dCMySu"
+>
+  <div
+    className="sc-EHOje ghdDOJ"
+  />
+</section>
+`;
