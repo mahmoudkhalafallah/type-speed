@@ -20,7 +20,7 @@ height: 100%;
 position: absolute;
 `
 const GameContainer = styled.section`
-position: relative
+position: relative;
 `
 
 interface Props {
