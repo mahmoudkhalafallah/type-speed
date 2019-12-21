@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoList rendered correctly 1`] = `
+<ul
+  className="sc-bdVaJa cSScn"
+>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Time:
+    <span>
+      3
+      :
+      00
+    </span>
+  </li>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Words Per Minute:
+    <span
+      className="sc-htpNat eqnzgt"
+    >
+      30
+       WPM
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`InfoList rendered correctly on game over 1`] = `
+<ul
+  className="sc-bdVaJa cSScn"
+>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Time:
+    <span>
+      3
+      :
+      00
+    </span>
+  </li>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Words Per Minute:
+    <span
+      className="sc-htpNat eqnzgt"
+    >
+      30
+       WPM
+    </span>
+  </li>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Completion Percentage:
+    <span>
+      20
+      %
+    </span>
+  </li>
+  <li
+    className="sc-bwzfXH fwsDhg"
+  >
+    Find your record 
+    <a
+      href="/history/xyz"
+      onClick={[Function]}
+    >
+      here
+    </a>
+  </li>
+</ul>
+`;
