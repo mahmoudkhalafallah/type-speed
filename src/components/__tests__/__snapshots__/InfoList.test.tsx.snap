@@ -1,77 +1,265 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InfoList rendered correctly 1`] = `
-<ul
-  className="sc-bdVaJa cSScn"
->
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Time:
-    <span>
-      3
-      :
-      00
-    </span>
-  </li>
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Words Per Minute:
-    <span
-      className="sc-htpNat eqnzgt"
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="sc-bdVaJa cSScn"
+      >
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Time:
+          <span>
+            3
+            :
+            00
+          </span>
+        </li>
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Words Per Minute:
+          <span
+            class="sc-htpNat eqnzgt"
+          >
+            30
+             WPM
+          </span>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="sc-bdVaJa cSScn"
     >
-      30
-       WPM
-    </span>
-  </li>
-</ul>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Time:
+        <span>
+          3
+          :
+          00
+        </span>
+      </li>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Words Per Minute:
+        <span
+          class="sc-htpNat eqnzgt"
+        >
+          30
+           WPM
+        </span>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;
 
 exports[`InfoList rendered correctly on game over 1`] = `
-<ul
-  className="sc-bdVaJa cSScn"
->
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Time:
-    <span>
-      3
-      :
-      00
-    </span>
-  </li>
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Words Per Minute:
-    <span
-      className="sc-htpNat eqnzgt"
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="sc-bdVaJa cSScn"
+      >
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Time:
+          <span>
+            3
+            :
+            00
+          </span>
+        </li>
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Words Per Minute:
+          <span
+            class="sc-htpNat eqnzgt"
+          >
+            30
+             WPM
+          </span>
+        </li>
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Completion Percentage:
+          <span>
+            20
+            %
+          </span>
+        </li>
+        <li
+          class="sc-bwzfXH fwsDhg"
+        >
+          Find your record 
+          <a
+            href="/history/xyz"
+          >
+            here
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="sc-bdVaJa cSScn"
     >
-      30
-       WPM
-    </span>
-  </li>
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Completion Percentage:
-    <span>
-      20
-      %
-    </span>
-  </li>
-  <li
-    className="sc-bwzfXH fwsDhg"
-  >
-    Find your record 
-    <a
-      href="/history/xyz"
-      onClick={[Function]}
-    >
-      here
-    </a>
-  </li>
-</ul>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Time:
+        <span>
+          3
+          :
+          00
+        </span>
+      </li>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Words Per Minute:
+        <span
+          class="sc-htpNat eqnzgt"
+        >
+          30
+           WPM
+        </span>
+      </li>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Completion Percentage:
+        <span>
+          20
+          %
+        </span>
+      </li>
+      <li
+        class="sc-bwzfXH fwsDhg"
+      >
+        Find your record 
+        <a
+          href="/history/xyz"
+        >
+          here
+        </a>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

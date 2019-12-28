@@ -1,13 +1,11 @@
 import React from 'react'
 import Game from '../Game'
-import renderer from 'react-test-renderer'
-import 'jest-fetch-mock'
+import { render } from '@testing-library/react'
 
 test('Game rendered correctly', () => {
-    const component = renderer.create(
+    const component = render(
         <Game />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
 })

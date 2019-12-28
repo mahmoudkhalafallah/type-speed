@@ -1,15 +1,15 @@
 import React from 'react'
 import InfoList from '../InfoList'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 const cp = 0
 const wpm = 30
 const historyId = ''
 const gameOver = false
-const endGame = () => { }
+const endGame = jest.fn()
 
 test('InfoList rendered correctly', () => {
-    const component = renderer.create(
+    const component = render(
         <InfoList
             cp={cp}
             wpm={wpm}
@@ -18,13 +18,12 @@ test('InfoList rendered correctly', () => {
             endGame={endGame}
         />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
 })
 
 test('InfoList rendered correctly on game over', () => {
-    const component = renderer.create(
+    const component = render(
         <InfoList
             cp={20}
             wpm={wpm}
@@ -33,7 +32,6 @@ test('InfoList rendered correctly on game over', () => {
             endGame={endGame}
         />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
 })

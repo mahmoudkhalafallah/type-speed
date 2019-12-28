@@ -1,13 +1,14 @@
+/* eslint-disable no-undef */
 import React from 'react'
 import History from '../History'
-import renderer from 'react-test-renderer'
-import 'jest-fetch-mock'
+import { render } from '@testing-library/react'
 
-test('History rendered correctly', () => {
-    const component = renderer.create(
+test('History rendered correctly', async () => {
+
+    const component = render(
         <History historyId='m0nww' />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
+
 })

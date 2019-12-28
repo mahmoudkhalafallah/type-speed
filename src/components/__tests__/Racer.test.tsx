@@ -1,23 +1,20 @@
 import React from 'react'
 import Racer from '../Racer'
-import renderer from 'react-test-renderer'
-import 'jest-fetch-mock'
+import { render } from '@testing-library/react'
 
 test('Racer rendered correctly', () => {
-    const component = renderer.create(
+    const component = render(
         <Racer gameOver={false} endGame={() => { }} setCp={() => { }} setWpm={() => { }} />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
 })
 
 test('Racer rendered correctly on game over', () => {
-    const component = renderer.create(
+    const component = render(
         <Racer gameOver={true} endGame={() => { }} setCp={() => { }} setWpm={() => { }} />,
     )
-    let tree = component.toJSON()
 
-    expect(tree).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
 })
 
