@@ -33,7 +33,9 @@ const History: React.FC<Props> = ({ historyId }) => {
                 .then(res => res.json())
                 .then((data: { "wpm": string, "cp": string }) => {
                     setGameRecordsHistoryData(data)
-                }).finally(() => {
+                })
+                .catch(err => err)
+                .finally(() => {
                     setDataLoaded(true)
                 })
         }
@@ -41,7 +43,7 @@ const History: React.FC<Props> = ({ historyId }) => {
 
     return <>
         {(gameRecordsHistoryData.wpm && gameRecordsHistoryData.cp) ?
-            <RecordList>
+            <RecordList data-testid='recordList'>
                 <RecordItem>Words per minute: <RecordNum>{gameRecordsHistoryData.wpm}</RecordNum>WPM</RecordItem>
                 <RecordItem>Completion Percentage: <RecordNum>{gameRecordsHistoryData.cp}</RecordNum> %</RecordItem>
             </RecordList> :
