@@ -6,23 +6,23 @@ const gameOver = false
 const endGame = jest.fn()
 
 test('InfoList rendered correctly', () => {
-    const component = render(
+    const { baseElement } = render(
         <InfoList
             gameOver={gameOver}
             endGame={endGame}
         />,
     )
 
-    expect(component).toMatchSnapshot()
+    expect(baseElement).toMatchSnapshot()
 })
 
 test('InfoList rendered correctly on game over', () => {
-    const component = render(
+    const { baseElement } = render(
         <InfoList
             gameOver={!gameOver}
             endGame={endGame}
         />,
     )
 
-    expect(component).toMatchSnapshot()
+    expect(baseElement).toMatchSnapshot()
 })

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InfoList rendered correctly 1`] = `
+exports[`StyledInfoList rendered correctly 1`] = `
 <body>
   <div>
     <ul
@@ -32,7 +32,7 @@ exports[`InfoList rendered correctly 1`] = `
 </body>
 `;
 
-exports[`InfoList rendered correctly on game over 1`] = `
+exports[`StyledInfoList rendered correctly after time is up 1`] = `
 <body>
   <div>
     <ul
@@ -43,7 +43,7 @@ exports[`InfoList rendered correctly on game over 1`] = `
       >
         Time:
         <span>
-          3
+          0
           :
           00
         </span>
@@ -53,9 +53,9 @@ exports[`InfoList rendered correctly on game over 1`] = `
       >
         Words Per Minute:
         <span
-          class="sc-bdVaJa eBZPoX"
+          class="sc-bdVaJa eDGlOc"
         >
-          0
+          30
            WPM
         </span>
       </li>
@@ -64,9 +64,20 @@ exports[`InfoList rendered correctly on game over 1`] = `
       >
         Completion Percentage:
         <span>
-          0
+          80
           %
         </span>
+      </li>
+      <li
+        class="sc-htpNat hCuCUW"
+      >
+        Find your record 
+        <a
+          data-testid="recordLink"
+          href="/history/xyz"
+        >
+          here
+        </a>
       </li>
     </ul>
   </div>

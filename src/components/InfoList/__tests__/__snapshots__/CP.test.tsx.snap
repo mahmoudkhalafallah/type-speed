@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CP rendered correctly 1`] = `
+<body>
+  <div>
+    Completion Percentage:
+    <span>
+      90
+      %
+    </span>
+  </div>
+</body>
+`;

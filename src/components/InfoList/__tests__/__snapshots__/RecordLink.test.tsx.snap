@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordLink rendered correctly 1`] = `
+<body>
+  <div>
+    Find your record 
+    <a
+      data-testid="recordLink"
+      href="/history/testId"
+    >
+      here
+    </a>
+  </div>
+</body>
+`;
