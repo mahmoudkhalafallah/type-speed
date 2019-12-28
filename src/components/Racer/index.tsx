@@ -27,7 +27,6 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
             setTypedText('') // clear the current typed text
             if (wordIndex === quoteText.text.length - 1) { // if the accepted word is the last word in the quote end the game
                 endGame(true)
-                return
             }
             setWordIndex(c => c + 1) // and update the current word index
         } else { // otherwise just update the typed text
@@ -59,6 +58,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
                 clearInterval(timerHandle)
                 // Calculate Completion Percentage
                 const calculateCp = (typedCharsCount / quoteText.count) * 100
+
                 setCp(parseInt(calculateCp.toFixed()))
 
                 return
