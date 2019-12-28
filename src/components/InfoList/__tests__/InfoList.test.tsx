@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoList from '../InfoList'
+import InfoList from '..'
 import { render } from '@testing-library/react'
 
 const gameOver = false

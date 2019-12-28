@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import InfoList from '../components/InfoList/InfoList'
+import InfoList from '../components/InfoList'
 import Racer from '../components/Racer'
 import { HISTORY_URL } from '../constants'
 import { RouteComponentProps } from "@reach/router" // eslint-disable-line no-unused-vars
