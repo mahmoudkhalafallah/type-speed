@@ -46,13 +46,14 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
         const timerHandle = setInterval(() => {
             const typedCharsCount = quoteText.text.slice(0, wordIndex).join(' ').length
 
-            setSecondsElapsed(s => s + 1)
-
             // Calculate Words Per Minute rate
-            const wordsCount = (typedCharsCount / AVERAGE_WORD_LENGTH)
-            const minutesCount = (secondsElapsed / SECONDS_IN_MINUTE)
-            const wpm = (wordsCount / minutesCount).toFixed()
-            setWpm(parseInt(wpm))
+            if (secondsElapsed > 0 && typedCharsCount > 0) {
+                const wordsCount = (typedCharsCount / AVERAGE_WORD_LENGTH)
+                const minutesCount = (secondsElapsed / SECONDS_IN_MINUTE)
+                const wpm = (wordsCount / minutesCount).toFixed()
+
+                setWpm(parseInt(wpm))
+            }
 
             if (gameOver) {
                 clearInterval(timerHandle)
@@ -62,6 +63,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
 
                 return
             }
+            setSecondsElapsed(e => e + 1)
 
         }, 1000)
         return () => {
