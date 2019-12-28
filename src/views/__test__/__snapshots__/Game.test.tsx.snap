@@ -9,10 +9,10 @@ Object {
         class="Game"
       >
         <ul
-          class="sc-bdVaJa cSScn"
+          class="sc-bwzfXH kkRSrs"
         >
           <li
-            class="sc-bwzfXH fwsDhg"
+            class="sc-htpNat hCuCUW"
           >
             Time:
             <span>
@@ -22,11 +22,11 @@ Object {
             </span>
           </li>
           <li
-            class="sc-bwzfXH fwsDhg"
+            class="sc-htpNat hCuCUW"
           >
-            Words Per Minute:
+            Words Per Minute: 
             <span
-              class="sc-htpNat grLPkg"
+              class="sc-bdVaJa eBZPoX"
             >
               0
                WPM
@@ -44,10 +44,10 @@ Object {
       class="Game"
     >
       <ul
-        class="sc-bdVaJa cSScn"
+        class="sc-bwzfXH kkRSrs"
       >
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
           Time:
           <span>
@@ -57,11 +57,11 @@ Object {
           </span>
         </li>
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
-          Words Per Minute:
+          Words Per Minute: 
           <span
-            class="sc-htpNat grLPkg"
+            class="sc-bdVaJa eBZPoX"
           >
             0
              WPM

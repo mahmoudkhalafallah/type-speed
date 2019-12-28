@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <ul
-        class="sc-bdVaJa cSScn"
+        class="sc-bwzfXH kkRSrs"
       >
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
           Time:
           <span>
@@ -19,11 +19,11 @@ Object {
           </span>
         </li>
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
-          Words Per Minute:
+          Words Per Minute: 
           <span
-            class="sc-htpNat eqnzgt"
+            class="sc-bdVaJa eDGlOc"
           >
             30
              WPM
@@ -34,10 +34,10 @@ Object {
   </body>,
   "container": <div>
     <ul
-      class="sc-bdVaJa cSScn"
+      class="sc-bwzfXH kkRSrs"
     >
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
         Time:
         <span>
@@ -47,11 +47,11 @@ Object {
         </span>
       </li>
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
-        Words Per Minute:
+        Words Per Minute: 
         <span
-          class="sc-htpNat eqnzgt"
+          class="sc-bdVaJa eDGlOc"
         >
           30
            WPM
@@ -119,10 +119,10 @@ Object {
   "baseElement": <body>
     <div>
       <ul
-        class="sc-bdVaJa cSScn"
+        class="sc-bwzfXH kkRSrs"
       >
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
           Time:
           <span>
@@ -132,18 +132,18 @@ Object {
           </span>
         </li>
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
-          Words Per Minute:
+          Words Per Minute: 
           <span
-            class="sc-htpNat eqnzgt"
+            class="sc-bdVaJa eDGlOc"
           >
             30
              WPM
           </span>
         </li>
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
           Completion Percentage:
           <span>
@@ -152,7 +152,7 @@ Object {
           </span>
         </li>
         <li
-          class="sc-bwzfXH fwsDhg"
+          class="sc-htpNat hCuCUW"
         >
           Find your record 
           <a
@@ -166,10 +166,10 @@ Object {
   </body>,
   "container": <div>
     <ul
-      class="sc-bdVaJa cSScn"
+      class="sc-bwzfXH kkRSrs"
     >
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
         Time:
         <span>
@@ -179,18 +179,18 @@ Object {
         </span>
       </li>
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
-        Words Per Minute:
+        Words Per Minute: 
         <span
-          class="sc-htpNat eqnzgt"
+          class="sc-bdVaJa eDGlOc"
         >
           30
            WPM
         </span>
       </li>
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
         Completion Percentage:
         <span>
@@ -199,7 +199,7 @@ Object {
         </span>
       </li>
       <li
-        class="sc-bwzfXH fwsDhg"
+        class="sc-htpNat hCuCUW"
       >
         Find your record 
         <a
