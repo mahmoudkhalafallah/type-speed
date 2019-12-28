@@ -15,6 +15,6 @@ const WpmIndicator = styled.span`
 
 const WPM: React.FC<{ wpm: number }> = ({ wpm }) =>
     <>
-        Words Per Minute: <WpmIndicator wpm={wpm}>{wpm} WPM</WpmIndicator>
+        Words Per Minute:<WpmIndicator wpm={wpm}>{wpm} WPM</WpmIndicator>
     </>
 export default WPM
