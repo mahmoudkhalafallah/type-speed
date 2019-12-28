@@ -1,5 +1,5 @@
 import React from 'react'
-import Quote from '../Quote'
+import Quote from '../Racer/Quote'
 import { render } from '@testing-library/react'
 
 const str = 'Pork rump minim, laborum spare ribs pancetta lorem ut meatloaf ullamco swine sint voluptate pariatur. Ullamco mollit consequat est. Esse brisket spare ribs ipsum eiusmod t-bone mollit veniam. Exercitation short loin filet mignon, tenderloin tail anim kevin ribeye minim beef velit esse salami. Rump et do landjaeger.'.split(' ')

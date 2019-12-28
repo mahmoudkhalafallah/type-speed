@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// eslint-disable-next-line no-unused-vars
-import { WindowLocation } from '@reach/router'
 
 const TableContainer = styled.section`
 background: #fff;
