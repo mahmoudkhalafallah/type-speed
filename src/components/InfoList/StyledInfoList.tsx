@@ -4,6 +4,7 @@ import Time from './Time'
 import WPM from './WPM'
 import CP from './CP'
 import RecordLink from './RecordLink'
+import StatsContext from '../../utils/context/StatsContext'
 
 const StyledList = styled.ul`
 align-self: flex-end;
@@ -25,27 +26,27 @@ a {
 
 interface Props {
     time: { minutes: number, seconds: number };
-    gameOver: boolean;
-    wpm: number;
-    cp: number;
-    historyId: string
+    showCp: boolean;
 }
 
-const StyledInfoList: React.FC<Props> = ({ time, gameOver, wpm, cp, historyId }) => {
-    return <StyledList>
-        <StyledItem>
-            <Time minutes={time.minutes} seconds={time.seconds} />
-        </StyledItem>
-        <StyledItem>
-            <WPM wpm={wpm} />
-        </StyledItem>
-        {gameOver && <StyledItem>
-            <CP cp={cp} />
-        </StyledItem>}
-        {(historyId.length > 0) && <StyledItem>
-            <RecordLink historyId={historyId} />
-        </StyledItem>}
-    </StyledList>
+const StyledInfoList: React.FC<Props> = ({ time, showCp }) => {
+    return <StatsContext.Consumer>
+        {({ wpm, cp, historyId }) =>
+            <StyledList>
+                <StyledItem>
+                    <Time minutes={time.minutes} seconds={time.seconds} />
+                </StyledItem>
+                <StyledItem>
+                    <WPM wpm={wpm} />
+                </StyledItem>
+                {showCp && <StyledItem>
+                    <CP cp={cp} />
+                </StyledItem>}
+                {(historyId.length > 0) && <StyledItem>
+                    <RecordLink historyId={historyId} />
+                </StyledItem>}
+            </StyledList>}
+    </StatsContext.Consumer>
 }
 
 export default StyledInfoList

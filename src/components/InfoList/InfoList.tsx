@@ -4,12 +4,9 @@ import StyledInfoList from './StyledInfoList'
 interface Props {
     endGame: React.Dispatch<React.SetStateAction<boolean>>;
     gameOver: boolean;
-    wpm: number;
-    cp: number;
-    historyId: string
 }
 
-const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) => {
+const InfoList: React.FC<Props> = ({ endGame, gameOver }) => {
     const [time, setTime] = useState({ minutes: 3, seconds: 0 })
 
     const stopGame = useCallback((timerHandle: NodeJS.Timeout) => {
@@ -40,7 +37,7 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver, wpm, cp, historyId }) =>
         }
     }, [gameOver, stopGame, time.minutes, time.seconds])
 
-    return <StyledInfoList time={time} gameOver={gameOver} wpm={wpm} cp={cp} historyId={historyId} />
+    return <StyledInfoList time={time} showCp={gameOver} />
 }
 
 export default InfoList

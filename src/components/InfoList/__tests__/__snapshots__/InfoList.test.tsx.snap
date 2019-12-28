@@ -23,9 +23,9 @@ Object {
         >
           Words Per Minute: 
           <span
-            class="sc-bdVaJa eDGlOc"
+            class="sc-bdVaJa eBZPoX"
           >
-            30
+            0
              WPM
           </span>
         </li>
@@ -51,9 +51,9 @@ Object {
       >
         Words Per Minute: 
         <span
-          class="sc-bdVaJa eDGlOc"
+          class="sc-bdVaJa eBZPoX"
         >
-          30
+          0
            WPM
         </span>
       </li>
@@ -136,9 +136,9 @@ Object {
         >
           Words Per Minute: 
           <span
-            class="sc-bdVaJa eDGlOc"
+            class="sc-bdVaJa eBZPoX"
           >
-            30
+            0
              WPM
           </span>
         </li>
@@ -147,19 +147,9 @@ Object {
         >
           Completion Percentage:
           <span>
-            20
+            0
             %
           </span>
-        </li>
-        <li
-          class="sc-htpNat hCuCUW"
-        >
-          Find your record 
-          <a
-            href="/history/xyz"
-          >
-            here
-          </a>
         </li>
       </ul>
     </div>
@@ -183,9 +173,9 @@ Object {
       >
         Words Per Minute: 
         <span
-          class="sc-bdVaJa eDGlOc"
+          class="sc-bdVaJa eBZPoX"
         >
-          30
+          0
            WPM
         </span>
       </li>
@@ -194,19 +184,9 @@ Object {
       >
         Completion Percentage:
         <span>
-          20
+          0
           %
         </span>
-      </li>
-      <li
-        class="sc-htpNat hCuCUW"
-      >
-        Find your record 
-        <a
-          href="/history/xyz"
-        >
-          here
-        </a>
       </li>
     </ul>
   </div>,

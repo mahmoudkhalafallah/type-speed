@@ -4,6 +4,7 @@ import InfoList from '../components/InfoList/InfoList'
 import Racer from '../components/Racer'
 import { HISTORY_URL } from '../constants'
 import { RouteComponentProps } from "@reach/router" // eslint-disable-line no-unused-vars
+import StatsContext from '../utils/context/StatsContext'
 
 const GameOver = styled.h2`
 transition: 0.2s ease;
@@ -58,28 +59,28 @@ const Game: React.FC<RouteComponentProps> = ({ location }) => {
     const [gameOver, setGameOver] = useState(false)
     const [restartGame, setRestartGame] = useState(false)
     const [wpm, setWpm] = useState(0)
-    const [completionPercent, setCompletionPercent] = useState(0)
-    const [gameRecordsHistoryId, setGameRecordsHistoryId] = useState('')
+    const [cp, setCp] = useState(0)
+    const [historyId, setHistoryId] = useState('')
     useEffect(() => {
-        if (gameOver && completionPercent > 0) {
+        if (gameOver && cp > 0) {
             fetch(HISTORY_URL,
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         wpm,
-                        cp: completionPercent
+                        cp: cp
                     })
                 }
             ).then(res => res.json()).then((data: { uri: string }) => {
                 const splittedText = data.uri.split('/')
-                setGameRecordsHistoryId(splittedText[splittedText.length - 1])
+                setHistoryId(splittedText[splittedText.length - 1])
             })
                 .catch((err) => {
                     console.log(err)
                 })
         }
-    }, [gameOver, completionPercent, wpm])
+    }, [gameOver, cp, wpm])
 
 
     useEffect(() => {
@@ -97,10 +98,10 @@ const Game: React.FC<RouteComponentProps> = ({ location }) => {
             </>}
             {
                 !restartGame &&
-                <>
-                    <InfoList gameOver={gameOver} endGame={setGameOver} wpm={wpm} cp={completionPercent} historyId={gameRecordsHistoryId} />
-                    <Racer gameOver={gameOver} endGame={setGameOver} setWpm={setWpm} setCp={setCompletionPercent} />
-                </>
+                <StatsContext.Provider value={{ wpm, cp, historyId }}>
+                    <InfoList gameOver={gameOver} endGame={setGameOver} />
+                    <Racer gameOver={gameOver} endGame={setGameOver} setWpm={setWpm} setCp={setCp} />
+                </StatsContext.Provider>
             }
             {
                 (location && location.state && location.state.history) ? <HistoryContainer>
