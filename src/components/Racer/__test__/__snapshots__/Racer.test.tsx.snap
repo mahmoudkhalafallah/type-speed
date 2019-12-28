@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Racer rendered correctly 1`] = `
+<body>
+  <div>
+    <section
+      class="sc-bZQynM dCMySu"
+    />
+  </div>
+</body>
+`;
