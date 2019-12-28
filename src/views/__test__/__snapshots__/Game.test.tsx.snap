@@ -5,44 +5,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="Game"
-      >
-        <ul
-          class="sc-bwzfXH kkRSrs"
-        >
-          <li
-            class="sc-htpNat hCuCUW"
-          >
-            Time:
-            <span>
-              3
-              :
-              00
-            </span>
-          </li>
-          <li
-            class="sc-htpNat hCuCUW"
-          >
-            Words Per Minute: 
-            <span
-              class="sc-bdVaJa eBZPoX"
-            >
-              0
-               WPM
-            </span>
-          </li>
-        </ul>
-        <section
-          class="sc-dnqmqq hoMqEr"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="Game"
-    >
       <ul
         class="sc-bwzfXH kkRSrs"
       >
@@ -72,6 +34,36 @@ Object {
         class="sc-dnqmqq hoMqEr"
       />
     </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="sc-bwzfXH kkRSrs"
+    >
+      <li
+        class="sc-htpNat hCuCUW"
+      >
+        Time:
+        <span>
+          3
+          :
+          00
+        </span>
+      </li>
+      <li
+        class="sc-htpNat hCuCUW"
+      >
+        Words Per Minute: 
+        <span
+          class="sc-bdVaJa eBZPoX"
+        >
+          0
+           WPM
+        </span>
+      </li>
+    </ul>
+    <section
+      class="sc-dnqmqq hoMqEr"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
