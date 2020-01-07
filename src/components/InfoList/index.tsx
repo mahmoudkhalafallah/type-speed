@@ -10,12 +10,12 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver }) => {
     const [time, setTime] = useState({ minutes: 3, seconds: 0 })
 
     const stopGame = useCallback((timerHandle: NodeJS.Timeout) => {
-        clearInterval(timerHandle)
+        clearTimeout(timerHandle)
         endGame(true)
     }, [endGame])
 
     useEffect(() => {
-        const timerHandle = setInterval(() => {
+        const timerHandle = setTimeout(() => {
             if (time.seconds > 0) {
                 setTime(t => ({ minutes: t.minutes, seconds: t.seconds - 1 }))
             } else if (time.seconds === 0) {
@@ -33,7 +33,7 @@ const InfoList: React.FC<Props> = ({ endGame, gameOver }) => {
         }
 
         return () => {
-            clearInterval(timerHandle)
+            clearTimeout(timerHandle)
         }
     }, [gameOver, stopGame, time.minutes, time.seconds])
 

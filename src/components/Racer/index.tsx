@@ -42,7 +42,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
     }, [])
 
     useEffect(() => {
-        const timerHandle = setInterval(() => {
+        const timerHandle = setTimeout(() => {
             const typedCharsCount = quoteText.text.slice(0, wordIndex).join(' ').length
 
             // Calculate Words Per Minute rate
@@ -55,7 +55,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
             }
 
             if (gameOver) {
-                clearInterval(timerHandle)
+                clearTimeout(timerHandle)
                 // Calculate Completion Percentage
                 const calculateCp = (typedCharsCount / quoteText.count) * 100
 
@@ -67,7 +67,7 @@ const Racer: React.FC<Props> = ({ gameOver, endGame, setWpm, setCp }) => {
 
         }, 1000)
         return () => {
-            clearInterval(timerHandle)
+            clearTimeout(timerHandle)
         }
     }, [gameOver, quoteText, secondsElapsed, setCp, setWpm, wordIndex])
 
